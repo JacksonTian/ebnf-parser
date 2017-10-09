@@ -17,12 +17,12 @@ terminal = "'" , character , { character } , "'"
 
 lhs = identifier ;
 rhs = identifier
-     | terminal
-     | "[" , rhs , "]"
-     | "{" , rhs , "}"
-     | "(" , rhs , ")"
-     | rhs , "|" , rhs
-     | rhs , "," , rhs ;
+    | terminal
+    | "[" , rhs , "]"
+    | "{" , rhs , "}"
+    | "(" , rhs , ")"
+    | rhs , "|" , rhs
+    | rhs , "," , rhs ;
 
 rule = lhs , "=" , rhs , ";" ;
 grammar = { rule } ;
