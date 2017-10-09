@@ -26,5 +26,9 @@ var parser = new Parser(lexer);
 return parser.program();
 ```
 
+## Referrences
+
+- See [Extended Backus–Naur form](https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form)
+
 ## License
 The MIT license
