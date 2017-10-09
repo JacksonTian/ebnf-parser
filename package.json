@@ -7,11 +7,13 @@
     "lib": "lib"
   },
   "scripts": {
-    "lint": "eslint --fix lib demo_lexer.js demo_parser.js"
+    "test": "mocha -R spec test/*.test.js",
+    "lint": "eslint --fix lib test demo_lexer.js demo_parser.js"
   },
-  "author": "",
+  "author": "Jackson Tian",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^4.8.0"
+    "eslint": "^4.8.0",
+    "mocha": "^4.0.1"
   }
 }
