@@ -1,0 +1,17 @@
+{
+  "name": "ebnf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "lint": "eslint --fix lib demo_lexer.js demo_parser.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.8.0"
+  }
+}
