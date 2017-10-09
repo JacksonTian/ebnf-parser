@@ -1,5 +1,5 @@
 {
-  "name": "ebnf",
+  "name": "ebnf.js",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,13 +7,16 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "mocha -R spec test/*.test.js",
+    "test": "mocha -R spec",
+    "test-all": "mocha -R spec test/*.test.js",
+    "test-cov": "nyc --reporter=html --reporter=text mocha -R spec test/*.test.js",
     "lint": "eslint --fix lib test demo_lexer.js demo_parser.js"
   },
   "author": "Jackson Tian",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "eslint": "^4.8.0",
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "nyc": "^11.2.1"
   }
 }
